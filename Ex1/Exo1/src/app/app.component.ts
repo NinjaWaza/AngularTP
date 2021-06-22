@@ -8,6 +8,7 @@ import { Component, Input, Output } from '@angular/core';
     <span style="border: 1px solid black">{{inputValue}}</span>
     <br /><br />
     <button (click)="inputValue = ''">Clear</button>
+    <app-list-component></app-list-component>
   `,
   styleUrls: ['./app.component.css']
 })
