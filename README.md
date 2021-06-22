@@ -8,8 +8,8 @@ Une fois votre devoir terminer, envoyer le moi par mail à l'adresse : ange.pica
 
 ## Informations
 
-Nom:   
-Prenom:  
+Nom:   Follet
+Prenom:  Théodore
 
 ## Question ouvertes
 
@@ -18,37 +18,44 @@ Merci de répondre avec vos mots, même s'ils sont inexactes, je veux voir que v
 ### Qu'est qu'Angular et quel est son intérêt ?
 
 ```
-Votre réponse
+Angular est un framework javascript (js) sont intérêt est de développer rapidement des applications web (web app), généralement une application avec une seul page (ce qui simplifie l'expérience utilisateur).
 ```
 
 ### Qu'est-ce-qu'un composant
 
 ```
-Votre réponse
+Un composant est une sorte de module que l'on peut appeler (intégrer) dans notre application via un appel à celui-ci, via un appel par balise comme en HTML ex : <monComponent></monComponent>.
+On peut aussi lui donner des informations en entrée, ex : <monComponent [varTitle]="varYouWantToTransfer"></monComponent>
 ```
 
 ### Comment est découper un composant dans Angular ?
 
 ```
-Votre réponse
+Dans Angular nous avons dans un premier temps les lignes qui servent à l'import des dépendances.
+Import { componentToImport } from 'SourcesOfTheComponent)
+Dans un second temps le sélectionneur (qui permettra d'appeler notre composant) ainsi que la définition de la représentation graphique de celui-ci (HTML/CSS).
+
+Enfin pour terminer nous avons là class qui est/sera lié à ce composant, avec des définitions de variables, de fonctions, ainsi qu'un constructeur.
 ```
 
 ### Pourquoi vaut-il mieux faire de petit composant ?
 
 ```
-Votre réponse
+Ceux-ci sont plus simples à maintenir (à améliorer), ils ne sont pas trop spécifiques donc peuvent être appelés dans plusieurs situations.
+La visibilité est plus simple et donc le développement de ceux-ci est donc plus simple/agréable.
 ```
 
 ### A quoi sert un service ?
 
 ```
-Votre réponse
+Le but d'un service est d'être injecté dans des composants et celui-ci sert à centraliser certaines méthodes, certaines variables pour ensuite être appelé/utiliser.
 ```
 
 ### Qu'est-ce-qu'un observable, et quel est son intérêt ?
 
 ```
-Votre réponse
+Un observable permet à un composant de s'y abonner et donc de recevoir les mises à jour automatiquement (de manière async).
+Par exemple une liste de nombre qui serait afficher sur une page sera automatiquement misé à jour dans tous les composants qui l'inject (l'appel) lorsque nous ajoutera un element dans la liste.
 ```
 
 ## Exercice 1
